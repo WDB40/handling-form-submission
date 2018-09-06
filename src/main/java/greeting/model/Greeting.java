@@ -1,5 +1,8 @@
 package greeting.model;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Greeting {
 
     private long id;
