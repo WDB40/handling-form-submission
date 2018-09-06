@@ -1,18 +1,24 @@
 package greeting.model;
 
+
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 @Entity
 public class Greeting {
 
-    private long id;
+    @Id
+    @GeneratedValue
+    private Integer id;
+
     private String content;
 
     public long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
